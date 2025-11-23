@@ -5,7 +5,8 @@ import pandas as pd
 import numpy as np
 
 # ---------- PATHS ----------
-BASE_DIR = r"C:\Users\ramya\Downloads\DVA-final"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# BASE_DIR = r"C:\Users\ramya\Downloads\DVA-final"
 RAW_DIR = os.path.join(BASE_DIR, "taxi_raw", "taxt_data_23_25")
 PROCESSED_DIR = os.path.join(BASE_DIR, "taxi_processed")
 GROUPED_PATH = os.path.join(PROCESSED_DIR, "grouped_23_25.parquet")

@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
 # ---------------- PATHS ----------------
-BASE_DIR = r"C:\Users\ramya\Downloads\DVA-final"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROCESSED_DIR = os.path.join(BASE_DIR, "taxi_processed")
 ZONES_DIR = os.path.join(BASE_DIR, "taxi_zones")
 
