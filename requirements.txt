@@ -1,0 +1,10 @@
+pandas
+numpy
+geopandas
+scikit-learn
+streamlit
+plotly
+pydeck
+matplotlib
+holidays
+pyarrow

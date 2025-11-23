@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 # ---------- PATHS ----------
-BASE_DIR = r"C:\Users\ramya\Downloads\DVA-final"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROCESSED_DIR = os.path.join(BASE_DIR, "taxi_processed")
 
 GROUPED_CLUSTERED = os.path.join(PROCESSED_DIR, "grouped_clustered_23_25.parquet")
