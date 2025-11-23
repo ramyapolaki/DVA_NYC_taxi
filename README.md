@@ -50,6 +50,30 @@ DVA-NYC-TAXI/
 - Place parquet files in `taxi_raw/taxt_data_23_25/`.
 - Obtain the NYC Taxi Zones shapefile and place it in `taxi_zones/`.
 
+### Environment (recommended)
+
+
+```bash
+# create a virtual environment named "venv"
+python3 -m venv venv
+
+# activate the virtual environment (zsh)
+source venv/bin/activate
+
+# upgrade pip
+pip install --upgrade pip
+
+# install Python dependencies from requirements.txt
+pip install -r requirements.txt
+```
+
+Note: `geopandas` may require system dependencies (GDAL/PROJ/GEOS). If you encounter installation issues on macOS, install these via Homebrew before installing Python packages:
+
+```bash
+brew install gdal geos proj
+```
+Then retry `pip install -r requirements.txt`.
+
 ## Execution
 
 ### Full pipeline (first-time setup)
