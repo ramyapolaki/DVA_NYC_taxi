@@ -620,7 +620,7 @@ def render_cluster_map(
             )
         ],
         tooltip={
-            "text": "{role}: {cluster_label}\nTrips: {count:,}\nLat/Lon: {lat:.4f}, {lon:.4f}"
+            "text": "{role}: {cluster_label}"
         },
     )
 
